@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <title>CENG206 Project</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+        <link rel="stylesheet" href="design.css">
+        <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+      <div class="color">
+      <br>
+      <br>
+      <h1 class="header">TIMETABLE GENERATOR</h1>
+      <div class="little">
+        <img src="favicon.png" width="100" width="100">
+      </div>
+      <p class="header" id="output" >Please enter the busy.csv</p>
+      <form class="header" id="myForm">
+        <div class="upload">
+          <input type="file" id="csvFile" accept=".csv"/>
+        </div>
+      </form>
+      <br>
+      <br>
+      </div>
+
+      <div class="mainmenu">
+        <br>
+        <div class="year"><button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true">First Year</button></div>
+        <div class="year"><button class="nav-link active" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="true">Second Year</button></div>
+        <div class="year"><button class="nav-link active" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="true">Third Year</button></div>
+        <div class="year"><button class="nav-link active" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth" type="button" role="tab" aria-controls="fourth" aria-selected="true">Fourth Year</button></div>
+      </div>
+      
+      <div class="timetable" class="tab-content" id="nav-tabContent">
+        <div class="week-names">
+          <div>monday</div>
+          <div>tuesday</div>
+          <div>wednesday</div>
+          <div>thursday</div>
+          <div>friday</div>
+        </div>
+        <div class="time-interval">
+          <div>Morning</div>
+          <div>Afternoon</div>
+        </div>
+        <div class="content">
+          <!-- morning  -->
+          <div>
+            <div id="monday-morning"></div>
+          </div>
+          <div >
+            <div id="tuesday-morning" ></div>
+          </div>
+          <div >
+            <div id="wednesday-morning" ></div>
+          </div>
+          <div >
+            <div id="thursday-morning" ></div>
+          </div>
+          <div>
+            <div id="friday-morning"></div>
+          </div>
+          
+          <!-- afternoon  -->
+          <div >
+            <div id="monday-afternoon" ></div>
+          </div>
+          <div >
+            <div id="tuesday-afternoon" ></div>
+          </div>
+          <div >
+            <div id="wednesday-afternoon" ></div>
+          </div>
+          <div >
+            <div id="thursday-afternoon" ></div>
+          </div>
+          <div>
+            <div id="friday-afternoon"></div>
+          </div>
+          
+        </div>
+      </div>
+        
+    </body>
+    <script src="isim.js"></script>
+</html>

@@ -1,0 +1,259 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla";
+  color: #546E7A;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-family: 'Montserrat';
+  font-family: 'Montserrat';
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw5aXo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.little{
+  margin-left: 47%;
+}
+
+
+.header{
+  text-align: center;
+}
+
+.color{
+  background-color: antiquewhite;
+}
+
+div.upload {
+  margin-left: 44.8%;
+  width: 157px;
+  height: 57px;
+  background: url(https://lh6.googleusercontent.com/-dqTIJRTqEAQ/UJaofTQm3hI/AAAAAAAABHo/w7ruR1SOIsA/s157/upload.png);
+  overflow: hidden;
+}
+
+div.upload input{
+  display: block;
+  width: 157px;
+  height: 57px;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.upload:hover{
+  transform: scale(1.05);
+}
+
+.mainmenu {
+	background-color: antiquewhite;
+  opacity: 0.90;
+  width: 100%;
+  margin: 0;
+  min-height: 50px;
+  text-align: center;
+}
+
+.year {
+  background-color: rgb(221, 218, 218);
+  width: 150px;
+  margin: 0 auto;
+  min-height: 40px;
+  float: none;
+  display:inline-block;
+  margin-bottom: 19px;
+  margin-right: 50px;
+  padding-top: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.year:hover{
+  transform: scale(1.1);
+}
+
+.nav-link{
+  border: none;
+  background-color: rgb(221, 218, 218);
+  width: 150px;
+  height: 22px;
+}
+
+.timetable {
+  display: grid;
+  grid-template-areas: ". week" "time content";
+  grid-template-columns: 120px;
+  grid-template-rows: 60px;
+  width: 99.22vw;
+  height: 54vh;
+}
+.timetable .accent-pink-gradient {
+  
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ee8ebc, #eea08e);
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-pink-gradient:hover {
+  box-shadow: 0 20px 30px 0 rgba(238, 142, 188, 0.3);
+  transform: scale(1.05);
+}
+.timetable .accent-orange-gradient {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #eec08e, #dcee8e);
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-orange-gradient:hover {
+  box-shadow: 0 20px 30px 0 rgba(238, 192, 142, 0.3);
+  transform: scale(1.05);
+}
+.timetable .accent-green-gradient {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #bcee8e, #8eeea0);
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-green-gradient:hover {
+  box-shadow: 0 20px 30px 0 rgba(188, 238, 142, 0.3);
+  transform: scale(1.05);
+}
+.timetable .accent-cyan-gradient {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #8eeec0, #8edcee);
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-cyan-gradient:hover {
+  box-shadow: 0 20px 30px 0 rgba(142, 238, 192, 0.3);
+  transform: scale(1.05);
+}
+
+.timetable .accent-blue-gradient {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #8ebcee, #a08eee);
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-blue-gradient:hover {
+  box-shadow: 0 20px 30px 0 rgba(142, 188, 238, 0.3);
+  transform: scale(1.05);
+}
+.timetable .accent-purple-gradient {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #c08eee, #ee8edc);
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-purple-gradient:hover {
+  box-shadow: 0 20px 30px 0 rgba(192, 142, 238, 0.3);
+  transform: scale(1.05);
+}
+.timetable .week-names {
+  grid-area: week;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.timetable .week-names > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 1px 0 0 #ECEFF1;
+}
+.timetable .time-interval {
+  grid-area: time;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  font-size: 14px;
+}
+.timetable .time-interval > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 1px 0 0 #ECEFF1;
+}
+.timetable .content {
+  grid-area: content;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+.timetable .content > div {
+  box-shadow: inset 1px 0 0 #ECEFF1, inset 0 1px 0 0 #ECEFF1;
+}
+
+#monday-morning{
+  align-items: center;
+  padding-left: 115px;
+}
+
+#tuesday-morning{
+  align-items: center;
+  padding-left: 115px;
+}
+
+#wednesday-morning{
+  align-items: center;
+  padding-left: 115px;
+}
+
+#thursday-morning{
+  align-items: center;
+  padding-left: 115px;
+}
+
+#friday-morning{
+  align-items: center;
+  padding-left: 115px;
+}
+
+
+
+#monday-afternoon{
+  align-items: center;
+  padding-left: 115px;
+}
+
+#tuesday-afternoon{
+  align-items: center;
+  padding-left: 115px;
+}
+
+#wednesday-afternoon{
+  align-items: center;
+  padding-left: 115px;
+}
+
+#thursday-afternoon{
+  align-items: center;
+  padding-left: 115px;
+}
+
+#friday-afternoon{
+  align-items: center;
+  padding-left: 115px;
+}
